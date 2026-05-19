@@ -9,7 +9,7 @@ ENV PORT=8000
 EXPOSE 8000
 
 ENTRYPOINT ["sh", "-c", \
-  "python -m vllm.entrypoints.openai.api_server \
+  "python3 -m vllm.entrypoints.openai.api_server \
   --model $MODEL_NAME \
   --max-model-len $MAX_MODEL_LEN \
   --host 0.0.0.0 \
