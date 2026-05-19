@@ -14,4 +14,6 @@ ENTRYPOINT ["sh", "-c", \
   --max-model-len $MAX_MODEL_LEN \
   --host 0.0.0.0 \
   --port $PORT \
-  --trust-remote-code"]
+  --trust-remote-code \
+  --quantization bitsandbytes \
+  --load-format bitsandbytes"]
